@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="skill">
+    <output-path>D:/마인크래프트/놀이터/파랑이놀이터/plugins</output-path>
+    <root id="archive" name="skill.jar">
+      <element id="module-output" name="skill.main" />
+      <element id="dir-copy" path="$PROJECT_DIR$/src/main/resources" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,6 @@
+name: Skills
+version: 1.0-SNAPSHOT
+main: tk.pshub.parangee.skills.plugin.Skill
+depend:
+  - Kotlin
+  - Tap
