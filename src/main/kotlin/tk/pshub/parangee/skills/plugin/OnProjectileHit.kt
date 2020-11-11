@@ -10,7 +10,7 @@ import org.bukkit.event.entity.ProjectileHitEvent
 class OnProjectileHit(private val pl: Skill) : Listener {
     @EventHandler
     fun onProjectHit(e: ProjectileHitEvent) {
-        if (e.entityType != EntityType.SNOWBALL) return
+        if (e.entityType != EntityType.TNT) return
         e.hitBlock?.location?.createExplosion(5f)
         Bukkit.getOnlinePlayers().forEach { p ->
             e.entity.location.let { p.spawnParticle(Particle.END_ROD, it, 30) }
