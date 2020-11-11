@@ -12,9 +12,9 @@ class Skill:JavaPlugin() {
         Bukkit.getScheduler().scheduleSyncRepeatingTask(this, Runnable {
             Bukkit.getWorlds().forEach {world ->
                 world.entities.forEach {
-                    if (it.type == EntityType.SNOWBALL) {
+                    if (it.type == EntityType.TNT) {
                         Bukkit.getOnlinePlayers().forEach { p ->
-                            p.spawnParticle(Particle.FLAME, it.location, 1)
+                            p.spawnParticle(Particle.LAVA, it.location, 1)
                         }
                     }
                 }
